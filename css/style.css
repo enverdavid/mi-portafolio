@@ -19,7 +19,7 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr 50px;
     padding: 30px;
-    background-image: url('/images.html/teclado.png');
+    background-image: url('./images.html/teclado.png');
     background-size: cover;
     position: relative;
     /* padding-top: 20px;
