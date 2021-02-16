@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-color: black;
+}
+main {
+    background-color: white;
+    padding: 50px 0;
+}
+.content-cabecera {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 50px;
+    padding: 30px;
+    background-image: url('/images.html/teclado.png');
+    background-size: cover;
+    position: relative;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+}
+.content-cabecera:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #031D40;
+    position: absolute;
+    /* margin: -20px; */
+    opacity: 0.5;
+
+}
+.content-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden; /* Ver como finciona esto! */
+    margin: auto;
+}
+h2 {
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    align-self: center;
+}
+h2 span {
+    font-weight: 500;
+    color: #21D6B0;
+}
+.content-logo img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; se hizo en el contenedor con una técnica aún por entender. */
+}
+.content-cabecera p {
+    color: white;
+    text-align: center;
+    align-self: center;
+}
+.content-cabecera a {
+    color: white;
+}
+.content-cabecera h2, p {
+    z-index: 1;
+}
+.works-container {
+    width: 100%;
+    max-width: 1200px;
+    /* height: 430px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.works-container .card {
+    width: 330px;
+    height: 430px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.5); /* Cómo funciona */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.works-container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.works-container .card img {
+    width: 330px;
+    height: 220px;
+}
+.card h4 {
+    margin-top: 20px;
+}
+.card p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #031D40;
+}
+footer div {
+    border-bottom: 2px solid #21D6B0;
+}
+footer .fab {
+    font-size: 50px;
+    color: white;
+    margin: 0 20px;
+    padding-bottom: 20px;
+}
+
