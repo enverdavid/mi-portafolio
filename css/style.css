@@ -64,6 +64,8 @@ h2 span {
 }
 .content-cabecera a {
     color: white;
+    text-align: center;
+    align-self: center;
 }
 .content-cabecera h2, p {
     z-index: 1;
